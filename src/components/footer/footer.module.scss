@@ -1,0 +1,45 @@
+.root {
+    padding: 50px 2% 30px;
+    background-color: var(--colorA3);
+}
+
+.navigation {
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    gap: 150px;
+    padding: 0 15px 30px;
+}
+
+.navItem {
+    display: block;
+    font-family: var(--heading-font);
+    font-size: 16px;
+    line-height: 2.2;
+    white-space: nowrap;
+}
+
+.navItem.active {
+    color: var(--colorD4);
+}
+
+.bottomBar {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+}
+
+.logo {
+    font: var(--heading1);
+    line-height: 1;
+    font-size: clamp(120px, 13vw, 220px);
+}
+
+.copyright {
+    font: var(--paragraph3);
+    white-space: nowrap;
+}
+
+.coduxLink {
+    text-decoration: underline;
+}

@@ -1,0 +1,73 @@
+.root {
+    position: relative;
+    display: grid;
+    grid-template-columns: 75px 1fr;
+    column-gap: 20px;
+    align-items: start;
+    padding: 20px 0;
+}
+
+.root:not(:first-child) {
+    border-top: 1px solid rgba(23, 17, 13, 0.3);
+}
+
+.imageWrapper {
+    border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.imagePlaceholder {
+    height: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--black);
+}
+
+.imagePlaceholderIcon {
+    color: var(--white);
+    width: 37px;
+    height: 37px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+    margin-bottom: 12px;
+}
+
+.removeButton {
+    flex: none;
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+}
+
+.quantityAndPrice {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 8px;
+}
+
+.root .quantityInput {
+    width: 96px;
+    height: 32px;
+    border-color: var(--colorA5);
+}
+
+.root .quantityInput button {
+    width: 32px;
+}
+
+.root.loading {
+    opacity: 0.4;
+    pointer-events: none;
+}
+
+.spinner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}

@@ -1,0 +1,26 @@
+.button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 16px;
+    border: 1px solid var(--colorA5);
+    background-color: var(--colorA5);
+    font: var(--paragraph1);
+    color: var(--colorA1);
+    cursor: pointer;
+    transition: 200ms ease;
+}
+
+.button:hover:not(:disabled) {
+    color: var(--colorA5);
+    background-color: transparent;
+}
+
+.button:focus {
+    box-shadow: 0 0 0 1px #ffffff, 0 0 0 3px #116dff;
+}
+
+.button:disabled {
+    background-color: var(--colorA3);
+    cursor: default;
+}

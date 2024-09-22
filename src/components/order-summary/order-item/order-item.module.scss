@@ -1,0 +1,42 @@
+.root {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+}
+
+.productInfo {
+    display: flex;
+    gap: 12px;
+}
+
+.imageWrapper {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--black);
+}
+
+.image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.imagePlaceholderIcon {
+    width: 50px;
+    height: 50px;
+    color: var(--white);
+}
+
+.productDetails {
+    margin-top: 12px;
+    font: var(--paragraph3);
+    color: var(--colorB3);
+}
+
+.orderInfo {
+    display: flex;
+    justify-content: space-between;
+}
